@@ -18,7 +18,7 @@ export class HomePage {
   ionViewWillEnter(){
     this.location = {
       city: 'Brno',
-      state: 'Czech Republic'
+      state: 'CZ'
     }
 
     this.weatherProvider.getWeather(this.location.city, this.location.state).subscribe(weather => {
