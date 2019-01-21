@@ -18,7 +18,8 @@ export class SettingsPage {
     public navCtrl: NavController, 
     public navParams: NavParams,
     private storage:Storage) {
-
+      
+      //ulozeni lokality
       this.storage.get('location').then((val) => {
         if(val != null){
           let location = JSON.parse(val);

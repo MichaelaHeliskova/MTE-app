@@ -9,7 +9,6 @@ export class WeatherProvider {
 
   constructor(public http: Http) {
 
-    console.log('Hello WeatherProvider Provider');
     this.url = 'https://api.openweathermap.org/data/2.5/weather?appid=' + this.apiKey + '&units=metric'
   }
 
