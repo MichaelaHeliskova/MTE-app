@@ -14,20 +14,20 @@
   </ion-header>
   
   
-  <ion-content padding>
+  <ion-content padding class="settings">
     <ion-grid>
       <ion-row>
         <ion-col width-100>
           <ion-list>
             <form (ngSubmit)="saveForm()">
               <ion-item>
-                <ion-label fixed>
+                <ion-label fixed class="city">
                   City
                 </ion-label>
                 <ion-input [(ngModel)]="city" name="city" type="text"></ion-input>
               </ion-item>
               <ion-item>
-                <ion-label fixed>
+                <ion-label fixed class="state">
                   State
                 </ion-label>
                 <ion-input [(ngModel)]="state" name="state" type="text"></ion-input>
